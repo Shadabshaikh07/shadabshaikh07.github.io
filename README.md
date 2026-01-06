@@ -1,16 +1,23 @@
 # Expense Tracker
 
-A client-side expense tracking web application built with **HTML, CSS, and Vanilla JavaScript**.
+A professional, client-side expense tracking web application built with **HTML, CSS, and Vanilla JavaScript**.
 
-The app allows users to track expenses by category and date, view monthly summaries, visualize spending with charts, and export data — all without a backend.
+The app allows users to track expenses by category and date, analyze monthly spending, visualize trends with charts, and export data — all without a backend.
 
-Live demo:  
-👉 https://shadabshaikh07.github.io
+🔗 **Live Demo:**  
+https://shadabshaikh07.github.io
+
+---
+
+## Preview
+
+*(Add a screenshot here for maximum impact)*
 
 ---
 
 ## Features
 
+### Core Functionality
 - Add expenses with:
   - Name
   - Category
@@ -19,23 +26,48 @@ Live demo:
 - Automatic total calculation
 - Category-wise totals
 - Monthly expense summaries
-- Monthly spending visualization (Chart.js)
+- Persistent storage using browser `localStorage`
+
+### Analytics & Visualization
+- Monthly spending breakdown by category (bar chart)
+- Daily spending trend for selected month (line chart)
+- Charts update correctly on add, delete, and empty states
+- Clean handling of months with no data
+
+### UX & Polish (WOW Features)
+- Dark / Light theme toggle (preference saved)
+- Category filter for expense list
+- Category-specific chart colors
+- Smooth chart animations
+- Formatted tooltips with PLN currency
 - CSV export for spreadsheet tools
-- Persistent storage using `localStorage`
-- Responsive, card-based UI
+- Responsive, card-based UI with micro-interactions
 
 ---
 
 ## Why This Project
 
-This project was built to practice:
+This project was built to simulate a real-world front-end application without relying on frameworks.
 
-- State management without frameworks
-- DOM manipulation and event-driven updates
-- Data aggregation (totals, monthly summaries)
-- Handling real UI edge cases (empty states, deletes, re-renders)
-- Git workflows (rebasing, conflict resolution)
-- Shipping and maintaining a live deployed app
+The focus was on:
+- Manual state management in vanilla JavaScript
+- Keeping multiple derived views in sync (list, totals, summaries, charts)
+- Handling edge cases such as empty states and deletions
+- Managing chart lifecycles correctly
+- Writing clean, maintainable CSS during iterative UI changes
+- Using Git properly, including rebasing and conflict resolution
+
+The goal was not just to make it work, but to make it **robust and production-like**.
+
+---
+
+## Key Technical Decisions
+
+- Centralized rendering logic to ensure consistent UI updates
+- Used browser-native APIs (`localStorage`, `Intl.NumberFormat`)
+- Explicitly destroyed and recreated Chart.js instances to avoid stale state
+- Scoped CSS carefully to prevent unintended overrides
+- Separated layout, data, and visualization concerns
 
 ---
 
