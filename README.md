@@ -11,7 +11,7 @@ https://shadabshaikh07.github.io
 
 ## Preview
 
-*(Add a screenshot here for maximum impact)*
+![alt text](./image.png)
 
 ---
 
