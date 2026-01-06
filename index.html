@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+	<h1>Expense Tracker</h1>
+
+	<form id="tracker-form">
+  	<input
+    	type="text"
+    	id="tracker-input"
+    	placeholder="Enter an expense"
+    	required
+  	/>
+
+  	<input
+    	type="number"
+    	id="amount-input"
+    	placeholder="Amount"
+    	step="0.01"
+    	required
+  	/>
+
+  	<button type="submit">Add</button>
+	</form>
+
+	<p id="total">Total: $0.00</p>
+
+    <ul id="tracker-list"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
